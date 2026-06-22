@@ -64,15 +64,15 @@ The objective of this project is to:
 
 ### Overview Page
 
-![Overview Dashboard](assets/overview.png)
+![Overview Dashboard](churn-dashboard/assets/overview.png)
 
 ### Analytics Dashboard
 
-![Analytics Dashboard](assets/analytics.png)
+![Analytics Dashboard](churn-dashboard/assets/analytics.png)
 
 ### Prediction Module
 
-![Prediction Module](assets/prediction.png)
+![Prediction Module](churn-dashboard/assets/prediction.png)
 
 ---
 

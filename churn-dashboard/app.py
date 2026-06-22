@@ -48,7 +48,41 @@ st.markdown(
 st.title("📊 ChurnSense AI Dashboard")
 st.caption("Smart Customer Churn Analytics & Prediction System")
 
+# -----------------------------
+# 📎 Colab Notebook Link
+# -----------------------------
 
+default_colab_url = "https://colab.research.google.com/drive/1n-6e2TifM4aJWAyRJVNWa8YlueODgSjH#scrollTo=rux04yjMsnWx"
+
+colab_url = st.text_input(
+    "📎 Colab Notebook URL (optional)",
+    value="",
+    help="Paste your Google Colab notebook URL to show a quick access link.",
+)
+
+link_to_use = colab_url.strip() if colab_url and colab_url.strip() else default_colab_url
+
+st.markdown("### 📊 Quick Access")
+st.write("Open the Google Colab notebook to view training, preprocessing, and model evaluation.")
+
+st.markdown(
+    f"""
+    <a href="{link_to_use}" target="_blank" style="text-decoration:none">
+        <div style="
+            display:inline-block;
+            padding:10px 16px;
+            background:#6366f1;
+            color:white;
+            border-radius:8px;
+            font-weight:600;
+            text-decoration:none;
+        ">
+            🚀 Open Colab Notebook
+        </div>
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
 # -----------------------------
 # SIDEBAR: Upload + Navigation
 # -----------------------------
