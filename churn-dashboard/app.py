@@ -54,15 +54,10 @@ st.caption("Smart Customer Churn Analytics & Prediction System")
 
 default_colab_url = "https://colab.research.google.com/drive/1n-6e2TifM4aJWAyRJVNWa8YlueODgSjH#scrollTo=rux04yjMsnWx"
 
-colab_url = st.text_input(
-    "📎 Colab Notebook URL (optional)",
-    value="",
-    help="Paste your Google Colab notebook URL to show a quick access link.",
-)
+# Use the default Colab link (removed the user input field)
+link_to_use = default_colab_url
 
-link_to_use = colab_url.strip() if colab_url and colab_url.strip() else default_colab_url
-
-st.markdown("### 📊 Quick Access")
+st.markdown("### 🚀 Quick Access")
 st.write("Open the Google Colab notebook to view training, preprocessing, and model evaluation.")
 
 st.markdown(
